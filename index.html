@@ -7,12 +7,13 @@
 
 <script src="palindrome.js"></script>
 <script src="minmax.js"></script>
+<script src="measurementofpolygon.js"></script>
 
 
   <body>
     <div class="Palindrome">
       Check for Palindrome <br/> <br/>
-      <input type="text" id="inputField" value="None"/>
+      <input type="text" id="inputField" value="None"/><br/><br/>
       <button onclick="FirstMethod()">First Method</button>
       <button onclick="SecondMethod()">Second Method</button>
       <button onclick="ThirdMethod()">Third Method</button>
@@ -20,7 +21,46 @@
     </div>
 
     <div class="HighestInArray">
-      Get the Highest in Array <br/><br/>
+      <br/> Get the Highest in Array <br/><br/>
+      Number 1 : <input type="text" id="Num1"><br/><br/>
+      Number 2 : <input type="text" id="Num2"><br/><br/>
+      Number 3 : <input type="text" id="Num3"><br/><br/>
+      Number 4 : <input type="text" id="Num4"><br/><br/>
+      Number 5 : <input type="text" id="Num5"><br/>
+    <p id="MaxNum"></p>
+    <p id="MinNum"></p>
+    <button onclick="GetMinMax()">Get Number</button>
+    <button onclick="GetMinMaxUsingApplyFunc()">Get the Highest Number using Apply Function</button>
+    <button onclick="ClearInputFields()">Clear Input Fields</button>
+    </div>
+
+    <div class="CalculateTheMeasurement">
+      <br> Calculate the Area, Perimeter of a Polygon <br> <br>
+      Calculate the Area and Perimeter of Rectangle<br> <br>
+      X : <input type="text" id="Xvalue"><br> <br>
+      Y : <input type="text" id="Yvalue"> 
+      <button onclick="GetTheMeasurementOfPolygon()"> Get the Area</button>
+      <button onclick="GetThePerimeterOfPolygon()">Get the Perimeter</button>
+     
+      <p id="Area"></p>
+      <p id="Perimeter"></p>
+    </div>
+
+    <div class="CalculateTheMeasurementCircle">
+      <br> Calculate the Area and Radius of the Circle <br><br>
+      Radius :   <input type="text" id="radius"><br><br>
+      Diameter : <input type="text" id="diameter"><br><br>
+
+      <button onclick="GetAreaUsingRadius()">Get the Area using the Radius</button>
+      <button onclick="GetAreaUsingDiameter()">Get the Area using the Diameter</button>
+
+      <p id="UsingRadius"></p>
+    </div>
+
+    <div class="FibonacciSeries">
+      <br> Fibonacci Series <br><br>
+      Enter the length of the sequence : <input type="text" id="inputField"><br><br>
+      <button onclick="GetFibonacci()">Get the Sequence</button>
     </div>
 
   </body>
